@@ -5,3 +5,10 @@ D:\IT_Step\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.Ass
 D:\IT_Step\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
 D:\IT_Step\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 D:\IT_Step\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.AssemblyReference.cache
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+D:\IT_Step\AA\IT_Step_Final_project\project_1\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
