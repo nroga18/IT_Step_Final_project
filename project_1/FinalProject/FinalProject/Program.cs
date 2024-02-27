@@ -17,7 +17,7 @@ namespace FinalProject
             //Hangman.Game();
             //Dictionary.Start();
             //BankcAccounts.Start();
-            //ShowBooksMenu();
+            ShowBooksMenu();
 
             Console.ReadLine(); 
         }

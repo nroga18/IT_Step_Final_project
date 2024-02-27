@@ -18,9 +18,14 @@ namespace FinalProject
         {
             Console.Write("Enter Name: ");
             var name = Console.ReadLine();
-            var folderName = "D:\\IT_Step\\project_1\\FinalProject\\BankAccounts\\";
-            var fullPath = folderName + name + ".txt";
-
+            var folderName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "BankAccounts\\");
+            var fullPath = Path.Combine(folderName, name + ".txt");
+            if (!File.Exists(fullPath))
+            {
+                var fs = File.CreateText(fullPath);
+                fs.Write($"Name-{name}, Balance-0");
+                fs.Close();
+            }
             try
             {
                 while (true)

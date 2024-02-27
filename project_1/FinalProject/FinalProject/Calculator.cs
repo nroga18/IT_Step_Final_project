@@ -26,34 +26,42 @@ namespace FinalProject
         }
         public static void CallCalculator()
         {
-            Console.Write("Enter number: ");
-            var num1 = double.Parse(Console.ReadLine());
-            Console.Write("Enter number: ");
-            var num2 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Choose operation: \n1.Multiply\n2.Substract\n3.Divide\n4.Add");
-            var choise = int.Parse(Console.ReadLine());
-            double res = 0;
-            switch (choise)
+            while (true)
             {
-                case 1:
-                    res = Calculator.Multiply(num1, num2);
-                    Console.WriteLine($"Result: {num1} * {num2} = {res}");
-                    break;
-                case 2:
-                    res = Calculator.Substract(num1, num2);
-                    Console.WriteLine($"Result: {num1} - {num2} = {res}");
-                    break;
-                case 3:
-                    res = Calculator.Divide(num1, num2);
-                    Console.WriteLine($"Result: {num1} / {num2} = {res}");
-                    break;
-                case 4:
-                    res = Calculator.Add(num1, num2);
-                    Console.WriteLine($"Result: {num1} + {num2} = {res}");
-                    break;
-                default:
-                    Console.WriteLine("Wrong input");
-                    break;
+               
+                Console.WriteLine("Choose operation: \n1.Multiply\n2.Substract\n3.Divide\n4.Add\n5.Exit");
+                var choise = int.Parse(Console.ReadLine());
+                if(choise == 5)
+                {
+                    return;
+                }
+                Console.Write("Enter number: ");
+                var num1 = double.Parse(Console.ReadLine());
+                Console.Write("Enter number: ");
+                var num2 = double.Parse(Console.ReadLine());
+                double res;
+                switch (choise)
+                {
+                    case 1:
+                        res = Multiply(num1, num2);
+                        Console.WriteLine($"Result: {num1} * {num2} = {res}");
+                        break;
+                    case 2:
+                        res = Substract(num1, num2);
+                        Console.WriteLine($"Result: {num1} - {num2} = {res}");
+                        break;
+                    case 3:
+                        res = Divide(num1, num2);
+                        Console.WriteLine($"Result: {num1} / {num2} = {res}");
+                        break;
+                    case 4:
+                        res = Add(num1, num2);
+                        Console.WriteLine($"Result: {num1} + {num2} = {res}");
+                        break;
+                    default:
+                        Console.WriteLine("Wrong input");
+                        break;
+                }
             }
         }
     }

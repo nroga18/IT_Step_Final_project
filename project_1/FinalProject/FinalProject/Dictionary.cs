@@ -17,8 +17,9 @@ namespace FinalProject
             Console.Write("Enter To language: ");
             var to = Console.ReadLine();
             var fileName = from + to;
-            var folderName = "D:\\IT_Step\\project_1\\FinalProject\\Dictionary\\";
-            var fullPath = folderName + fileName + ".txt";
+
+            var folderName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Dictionary\\");
+            var fullPath = Path.Combine(folderName,fileName + ".txt");
             while (true)
             {
                 Console.Write("Enter word to translate: ");
@@ -26,6 +27,12 @@ namespace FinalProject
                 var found = false;
                 try
                 {
+                    if(!File.Exists(fullPath))
+                    {
+                        var fs = File.Create(fullPath);
+                        fs.Close();
+                        
+                    }
                     var reader = new StreamReader(fullPath);
                     var line = reader.ReadLine();
                     while (line != null)
@@ -55,7 +62,7 @@ namespace FinalProject
                         var translation = Console.ReadLine();
                         try
                         {
-                            var writer = new StreamWriter(fullPath);
+                            var writer = new StreamWriter(fullPath,true);
                             writer.WriteLine($"{word} - {translation}");
                             writer.Close();
                         }

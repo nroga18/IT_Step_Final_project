@@ -22,7 +22,7 @@ namespace FinalProject
             var numOfTries = 20;
             var numOfUsedTries = 0;
             var ind = random.Next(words.Count);
-            var randomWord = words[0];
+            var randomWord = words[ind];
             var arr = new bool[randomWord.Length];
             for (int i = 0; i < randomWord.Length; i++)
             {
